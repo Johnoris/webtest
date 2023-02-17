@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+html{
+    font-family: Manrope;
+    color: #1A1A1A;
+}
+
+h1{
+    font-size: toRem(32);
+    font-weight: 700;
+    line-height: toRem(48);
+    letter-spacing: -0.5px;
+}
+h2{
+    font-size: toRem(24);
+    font-weight: 600;
+    line-height: toRem(37);
+    letter-spacing: -0.20000000298023224px;
+}
+h4{
+    font-size: toRem(16);
+    font-weight: 400;
+    line-height: toRem(25);
+    letter-spacing: 0.30000001192092896px;
+    color: #595959;
+}
+h5{
+    font-size: toRem(14);
+    font-weight: 500;
+    line-height: toRem(22);
+    letter-spacing: -0.20000000298023224px;
+}
+p{
+    font-size: toRem(12);
+    font-weight: 400;
+    line-height: toRem(19);
+    color: #A3A3A3;
+}

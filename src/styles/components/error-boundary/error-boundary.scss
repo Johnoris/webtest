@@ -1,0 +1,16 @@
+.error-boundary{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: toRem(10);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    button{
+        width: toRem(200);
+        height: toRem(40);
+        cursor: pointer;
+        margin-top: toRem(10);
+    }
+}

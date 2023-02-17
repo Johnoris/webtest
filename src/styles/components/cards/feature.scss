@@ -1,0 +1,25 @@
+.feature{
+    display: flex;
+    padding: toRem(10);
+    max-width: 462px;
+    gap: toRem(20);
+    align-items: center;
+    cursor: pointer;
+    &:not(:first-child){
+        margin-top: toRem(40);
+    }
+    &__content{
+        h4{
+            font-weight: 500;
+            margin: 0;
+        }
+        p{
+            max-width: toRem(296);
+        }
+    }
+}
+.selected{
+    background-color: #F8F8F6;
+    max-width: 462px;
+    border-radius: toRem(20);
+}

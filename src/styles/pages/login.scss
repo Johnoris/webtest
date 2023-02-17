@@ -1,0 +1,120 @@
+.login{
+    display: flex;
+    height: 100vh;
+    @media (max-width: 1240px) {
+        flex-direction: column;
+        gap: toRem(80);
+    }
+    &__content{
+        width: 50%;
+        padding: toRem(44) 0 0 toRem(80);
+        @media (max-width: 1300px) {
+            padding-left: toRem(40);
+        }
+        @media (max-width: 1240px) {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        &__logo{
+            margin-bottom: toRem(15);
+        }
+        @media (max-width: 500px) {
+            padding-left: toRem(20);
+        }
+        &__main{
+            h4{
+                max-width: toRem(482);
+                margin-top: toRem(8);
+            }
+            &__features{
+                margin-top: toRem(53);
+            }
+        }
+    }
+    &__main{
+        width: 50%;
+        background-color: #FEF0F2;
+        display: grid;
+        place-items: center;
+        @media (max-width: 1240px) {
+            width: 100%;
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: #ffffff;
+        }
+        &__container{
+            display: flex;
+            justify-content: center;
+            background-color: #FFFFFF;
+            width: toRem(630);
+            border-radius: toRem(12);
+            padding: toRem(40) 0 toRem(40) 0;
+            box-shadow: 0 toRem(4) toRem(25) 0 #66666633;
+            max-width: 90%;
+            h2, h4{
+                max-width: max-content;
+            }
+            .wrapper{
+                max-width: 90%;
+            }
+            &__form{
+                margin-top: toRem(48);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                max-width: 100%;
+                &__input{
+                    &:not(:first-child){
+                        margin-top: toRem(32);
+                    }
+                    display: flex;
+                    flex-direction: column;
+                    gap: toRem(12);
+                    max-width: 100%;
+                    .input-wrapper{
+                        height: toRem(65);
+                        width: toRem(490);
+                        max-width: 100%;
+                        border-radius: toRem(8);
+                        padding-left: toRem(20);
+                        border: toRem(1) solid #1A1A1A;
+                        display: flex;
+                        align-items: center;
+                        outline: none;
+                        font-size: toRem(16);
+                        font-weight: 400;
+                        line-height: toRem(25);
+                        letter-spacing: 0.30000001192092896px;
+                        padding-right: toRem(20);
+                        input{
+                            border: none;
+                            outline: none;
+                            height: 100%;
+                            width: 100%;
+                            font-size: toRem(16);
+                            font-weight: 400;
+                            line-height: toRem(25);
+                            letter-spacing: 0.30000001192092896px;
+                        }
+                    }
+                }
+                button{
+                    height: toRem(65);
+                    width: toRem(490);
+                    max-width: 90%;
+                    margin: 0 auto;
+                    border-radius: toRem(40);
+                    background-color: #1CC578;
+                    border: none;
+                    font-size: toRem(16);
+                    font-weight: 500;
+                    line-height: toRem(25);
+                    color: #ffffff;
+                    margin-top: toRem(56);
+                }
+            }
+        }
+    }
+}

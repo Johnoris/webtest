@@ -1,0 +1,28 @@
+.notification{
+    display: flex;
+    gap: toRem(16);
+    align-items: center;
+    &__icon{
+        background-color: #F4F5F5;
+        height: toRem(45);
+        width: toRem(45);
+        border-radius: toRem(6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__content{
+        div{
+            background-color: #F5F5F5;
+            height: toRem(14);
+            border-radius: toRem(4);
+        }
+        &__header{
+            width: toRem(194);
+        }
+        &__body{
+            width: toRem(132);
+            margin-top: toRem(4);
+        }
+    }
+}

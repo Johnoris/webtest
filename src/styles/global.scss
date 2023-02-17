@@ -1,0 +1,19 @@
+//utilities
+@import './utilities';
+
+//fonts
+@import './fonts';
+
+//app
+@import './app/app.scss';
+
+//pages
+@import './pages/login.scss';
+@import './pages/profile.scss';
+
+//components
+    //cards
+    @import './components/cards/feature.scss';
+    @import './components/cards/notification.scss';
+    //error-boundary
+    @import './components/error-boundary/error-boundary.scss';
