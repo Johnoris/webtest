@@ -54,9 +54,11 @@ const Profile = () => {
     },[])
 
     const fetchCompanyInfo = async() => {
+        toast.loading('Fetching company info')
         const response = await $api.post('', query)
         if($api.isSuccessful(response)){
             console.log(response)
+            toast.dismiss()
             setCompanyInfo({
                 name: response?.data?.data?.company?.name,
                 ceo: response?.data?.data.company?.ceo,
@@ -65,6 +67,7 @@ const Profile = () => {
         }
         else{
             toast.error("Couldn't fetch company info")
+            toast.dismiss()
         }
     }
 
